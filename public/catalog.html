@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>фуркация</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='/assets/common.css'>
+</head>
+
+<body>
+
+<div class="container mb-4">
+  <header class="mt-4 mb-4 d-flex justify-content-between align-items-center">
+    <h1>Код "Бифуркация" <small><a href="index.html">На главную</a></small></h1>
+    <div class="hasAuth">
+      <span class="profile-name mr-4"></span>
+      <img src="" class="profile-img">
+    </div>
+    <div class="noAuth">
+      <button class="btn btn-primary auth-trigger">Вход</button>
+    </div>
+  </header>
+
+  <section id="catalog" class="row">
+    <div class="col-sm-4">
+      <div class="row mb-4">
+        <div class="col filter">
+          <span class="btn btn-outline-success btn-tag mb-2 mr-2 study">Учись</span>
+          <span class="btn btn-outline-success btn-tag mb-2 mr-2 interest">Увлекайся</span>
+          <span class="btn btn-outline-success btn-tag mb-2 mr-2 money">Зарабатывай</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="accordion w-100" id="listsAccordion">
+          <div class="card">
+            <div class="card-header" id="tagsHeading">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#tagsCollapse" aria-expanded="false" aria-controls="tagsCollapse">
+                  Тематика
+                </button>
+              </h2>
+            </div>
+            <div id="tagsCollapse" class="collapse show" aria-labelledby="tagsHeading" data-parent="#listsAccordion">
+              <div class="card-body tag-list">
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="rolesHeading">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#rolesCollapse" aria-expanded="true" aria-controls="rolesCollapse">
+                  Роли
+                </button>
+              </h2>
+            </div>
+
+            <div id="rolesCollapse" class="collapse" aria-labelledby="rolesHeading" data-parent="#listsAccordion">
+              <div class="card-body roles-list">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8 projects-list">
+    </div>
+  </section>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script src='https://www.gstatic.com/firebasejs/5.10.0/firebase.js'></script>
+<script src="https://cdn.auth0.com/js/auth0/9.10/auth0.min.js"></script>
+<script src="/assets/auth.js"></script>
+<script src="/assets/common.js"></script>
+<script src="/assets/catalog.js"></script>
+
+</body>
+</html>
